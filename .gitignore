@@ -1,0 +1,56 @@
+# -----------------------------
+# Python bytecode and caches
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------
+# Local environment/secrets
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# Tooling and test caches
+# -----------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Streamlit/local app state
+# -----------------------------
+.streamlit/secrets.toml
+
+# -----------------------------
+# OS/editor noise
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Project-generated outputs
+# -----------------------------
+images/
+/*.md
+
+# Keep project docs tracked
+!README.md
