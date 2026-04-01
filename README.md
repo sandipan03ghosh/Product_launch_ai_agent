@@ -130,6 +130,7 @@ HF_TOKEN=your_huggingface_token
 LANGSMITH_API_KEY=your_langsmith_key
 LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=product-launch-agent
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
 ```
 
 Compatibility fallback (only if traces do not appear):
