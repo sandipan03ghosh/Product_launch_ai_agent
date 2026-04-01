@@ -178,41 +178,6 @@ Once tracing is enabled:
 - Latency and token/cost insights (when available)
 - Regression comparisons after prompt/code changes
 
-## Common Issues
-
-1. `No module named 'bwa_backend'`
-- Use `from backend import app` in `frontend.py`.
-
-2. PowerShell activation blocked
-- Run once:
-  - `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
-
-3. No evidence returned
-- Check `TAVILY_API_KEY`.
-- Closed-book mode can also intentionally run without evidence.
-
-4. Image generation failures
-- Check `HF_TOKEN`.
-- On failure, the app inserts a graceful markdown fallback block.
-
-5. LangSmith traces not showing
-- Confirm env keys are loaded before app starts.
-- Restart Streamlit after env changes.
-- Add compatibility `LANGCHAIN_*` variables if needed.
-
-## Security Notes
-
-- Never commit `.env`.
-- Rotate API keys if they are exposed.
-- Keep secrets out of logs/screenshots/commits.
-
-## Suggested Next Improvements
-
-- Add evaluation suite (factuality, citation validity, structure quality)
-- Add automated tests for router/research/markdown contracts
-- Add retry/timeouts and stronger guardrails
-- Add deployment and architecture diagram for portfolio use
-
 ## License
 
 Add a project license before public release (for example: MIT).
